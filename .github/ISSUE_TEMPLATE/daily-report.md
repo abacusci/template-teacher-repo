@@ -2,7 +2,8 @@
 name: Daily report
 about: Daily task and activity report for school staff
 title: Daily Report
-labels: 'Daily Report'
+labels: Daily Report
+assignees: ''
 
 ---
 
