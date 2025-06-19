@@ -1,0 +1,40 @@
+name: 📅 Daily Report
+description: Report your daily completed tasks, issues, and plans.
+title: "Daily Report – [YYYY-MM-DD]"
+labels: [daily-report]
+assignees:
+  - ${{ github.actor }}
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: The day this report refers to
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: ✅ Tasks Completed
+      description: Refer to completed GitHub issues (e.g., #23)
+      placeholder: |
+        - #45 Implemented grading module
+        - #48 Updated class timetable
+
+  - type: textarea
+    id: concerns
+    attributes:
+      label: ⚠️ Issues or Concerns
+      description: Issues encountered or ongoing challenges (e.g., #50)
+      placeholder: |
+        - #50 Parent feedback not yet addressed
+
+  - type: textarea
+    id: plans
+    attributes:
+      label: 📋 Plans for Tomorrow
+      description: Planned tasks for the next day (e.g., #51)
+      placeholder: |
+        - #51 Begin lesson planning for week 12
