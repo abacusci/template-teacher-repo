@@ -2,8 +2,7 @@
 name: Daily report
 about: Daily task and activity report for school staff
 title: Daily Report
-labels: ''
-assignees: rafageist
+labels: 'Daily Report'
 
 ---
 
